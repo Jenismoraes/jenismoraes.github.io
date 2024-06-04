@@ -205,18 +205,21 @@
     text-wrap: balance;
     line-height: 1;
     margin-bottom: 10px;
-    text-align: left; /* Alinha o texto à esquerda dentro do seu container */
+    text-align: right; /* Alinha o texto à esquerda dentro do seu container */
     color: var(--title-color);
 }
 
 .problem-text p {
-    width: 90%;
+    width: 100%;
     font-size: 20px;
-    margin-bottom: 20px; /* Adiciona espaço abaixo do parágrafo */
+    text-align: right;
+    color: var(--font-primary-color);
 }
 
 .problem-text h4 {
     margin-top: 20px; /* Adiciona espaço acima do h4 */
+    text-align: right;
+    color: var(--footer-bg);
 }
 
 /* fim Proteja os oceanos conosco */
@@ -239,7 +242,6 @@
 .work-item {
     display: flex;
     align-items: center;
-    margin-bottom: 16rem;
 }
 
 .work-photo {
@@ -252,17 +254,274 @@
 }
 
 .work-text {
-    flex: 2;
-    padding: 0 2rem;
+    flex: 1;
+    padding: 3rem 1rem;
     text-align: left;
 }
 
 .work-text h2 {
-    margin-top: 0;
     color: var(--title-color);
+    font-size: 44px;
+    word-break: break-word;
+    margin-top: 20px;
+}
+
+.work-text p{
+  font-size: 20px;
+  width: 90%;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.work-item_2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.work-photo_2 {
+  flex: 1;
+}
+
+.work-photo_2 img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.work-text_2 {
+  flex: 1;
+  padding: 3rem 1rem;
+  text-align: right;
+}
+
+.work-text_2 h2 {
+  color: var(--title-color);
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+.work-text_2 p{
+  font-size: 20px;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 /* fim Nosso trabalho. */
+
+/* Objetivos. */
+.objectives-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--color-bg);
+}
+
+.objectives-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.objectives-photo img {
+  max-width: 80%;
+  border-radius: 15px; /* Ajuste o raio conforme necessário */
+}
+
+.objectives-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.objectives-text h3 {
+  color: var(--title-color);
+  font-size: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.p_2 {
+  font-size: 15px;
+  line-height: 1.0rem;
+  margin-bottom: 1.5rem;
+}
+
+.objectives-details {
+  margin-top: 2rem; /* Espaçamento entre o h3/p_2 e a nova seção */
+}
+
+.objectives-details h4 {
+  color: var(--title-color);
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin: 0 1rem;
+}
+
+.objectives-details p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  margin: 0 1rem;
+}
+/* fim objetivos. */
+
+/*  estatiticas */
+.statistics-session {
+  padding: 2rem;
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.statistics-text h1 {
+  color: var(--title-color);
+  font-size: 39px;
+  margin-bottom: 1rem;
+}
+
+.statistics-text p {
+  font-size: 20px;
+  margin-bottom: 2.4rem;
+}
+
+.statistics-grid {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat-item h3 {
+  color: var(--font-primary-color);
+  font-size: 38px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 17px;
+  color: var(--footer-bg);
+}
+/* Fim estatiticas */
+
+/* beneficios */
+.benefits-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--color-secondary); 
+}
+
+.benefits-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-photo img {
+  max-width: 80%;
+  border-radius: 15px; 
+}
+
+.benefits-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.benefits-text h3 {
+  color: var(--title-color); 
+  font-size: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.benefits-text h4 {
+  color: var(--title-color);
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin: 0 1rem;
+}
+
+.benefits-details {
+  margin-top: 2rem; /* Espaçamento entre o h3/p_2 e a nova seção */
+}
+
+.benefits-details p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  margin: 0 1rem;
+}
+/* Fim beneficios */
+
+/* dIA A DIA */
+.daily-session {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  background-color: var(--color-bg);
+}
+
+.daily-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.daily-photo img {
+  max-width: 80%;
+  border-radius: 15px;
+}
+
+.daily-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.daily-text h3 {
+  color: var(--title-color);
+  font-size: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.daily-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  margin: 0 1rem;
+}
+
+.daily-text img {
+  gap: 10px;
+  width: 120px;
+  transition: transform 2s;
+}
+
+.daily-text img:hover {
+  transform: scale(1.5);
+}
+
+/* Adicionando o estilo para as setas */
+.arrow-up {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* fim no dia a dia */
+
 
 /* FOOTER */
 
