@@ -21,6 +21,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
   
   h1,
@@ -131,9 +132,6 @@
 .btn {
     border-radius: 50px;
     padding: 8px 30px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
     border: 2px solid var(--color-bg);
     background-color: transparent;
     color: var(--color-bg);
@@ -150,9 +148,6 @@
 .btn_2 {
     border-radius: 50px;
     padding: 8px 30px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
     background-color: var(--title-color);
     color: var(--color-bg);
     border: 0px solid var(--color-primary);
@@ -506,7 +501,7 @@
   transform: scale(1.5);
 }
 
-.arrow-down {
+.arrow-up {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -540,6 +535,7 @@ footer {
   
     p {
       font-size: larger;
+      color: var(--color-bg);
     }
   }
   
