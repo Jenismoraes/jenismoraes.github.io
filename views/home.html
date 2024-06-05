@@ -6,26 +6,42 @@
     <title>Oceanos Limpos</title>
     <link rel="stylesheet" href="../css/home.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com"/>
+    <script src="../js/home.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header-page">
+    <div class="container" id="home">
+      <header>
+        <nav class="nav-bar">
             <div class="logo-home">
                 <img src="../img/logo.png" alt="Logo" />
-              </div>
-          <nav>
+            </div>
+            <div class="header-links">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#problem">Proteja os oceanos</a></li>
+                    <li><a href="#work">Nosso Trabalho</a></li>
+                    <li><a href="#objectives">Objetivos</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#daily">Como ajudar a comunidade</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white.png" alt="Icone de menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
             <ul>
                 <li><a href="#">Login</a></li>
-              <li><a href="#problem">Proteja os oceanos</a></li>
-              <li><a href="#work">Nosso Trabalho</a></li>
-              <li><a href="#objectives">Objetivos</a></li>
-              <li><a href="#benefits">Beneficios</a></li>
-              <li><a href="#daily">Como ajudar a comunidade</a></li>
+                <li><a href="#problem">Proteja os oceanos</a></li>
+                <li><a href="#work">Nosso Trabalho</a></li>
+                <li><a href="#objectives">Objetivos</a></li>
+                <li><a href="#benefits">Beneficios</a></li>
+                <li><a href="#daily">Como ajudar a comunidade</a></li>
             </ul>
-          </nav>
-        </header>
+        </div>
+    </header>
   
-        <section class="hero" id="home">
+        <section class="hero">
             <h2>
                 Junte-se a nós na luta
                 contra a poluição dos

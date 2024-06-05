@@ -36,6 +36,7 @@
     flex-direction: column;
     font-family: var(--font-primary);
   }
+
 /* FIM ESTILOS GERAIS */
 
 /* HELPERS */
@@ -62,32 +63,25 @@
     background-position: 40%;
 }
 
-.header-page {
+.nav-bar {
     width: 100%;
-    height: 100px;
-    padding: 0 30px;
+    height: 110px;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: start;
-  
-    img {
-      width: 270px;
-      margin-bottom: 15px;
-      transform: scale(1.7);
-      position: relative;
-      top: 50px; 
-      left: 70px;
-    }
+.logo-home img {
+  display: flex;
+  width: 270px;
+  transform: scale(1.7);
+  position: relative;
+  top: 50px; 
+  left: 70px;
 }
 
-.header-page ul, li, a {
+.nav-bar ul, li, a {
     display: flex;
     gap:30px;
     color: var(--color-bg);
@@ -97,6 +91,10 @@
     && :hover {
         color: var(--title-color);
     }
+}
+
+.mobile-menu-icon, .mobile-menu {
+  display: none;
 }
   
   .hero {
@@ -595,3 +593,253 @@ footer {
     color: var(--color-bg);
   }
   
+  /* Estilos para dispositivos pequenos (máx 480px) */
+  @media screen and (max-width: 768px) {
+    .container {
+      display: block;
+      margin: 0;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 3rem;
+  }
+
+  .logo-home img {
+      width: 40vw;
+      top: 25px; 
+      left: 20px;
+  }
+
+  .header-links {
+      display: none;
+  }
+
+  .mobile-menu-icon {
+      display: block;
+      position: relative;
+      z-index: 1;
+  }
+
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  .mobile-menu {
+    top: 60px;
+    left: 0;
+    width: 50%;
+    background-color: var(--footer-bg);
+}
+
+  .mobile-menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      padding-bottom: 1rem;
+  }
+
+  .mobile-menu a {
+      display: block;
+      padding-top: 1.2rem;
+  }
+
+  .open {
+      display: block;
+  }
+
+  .hero h2 {
+      font-size: 50px;
+      margin-top: -300px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+
+  /* FIM container */
+
+  /* Proteja os oceanos conosco */
+.problem-session {
+  display: block; 
+}
+
+.problem-photo {
+  width: 90vw;
+  margin-top: 60px;
+}
+
+.problem-text {
+  width: 90vw;
+}
+
+.problem-text h2 {
+  font-size: 15vw;
+  line-height: 0.8;
+  text-align: center; 
+}
+
+.problem-text p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.problem-text h4 {
+  text-align: center;
+  margin-top: -05px;
+}
+/* fim Proteja os oceanos conosco */
+
+/* Nosso trabalho. */
+
+.work-item, .work-item_2 {
+  display: block;
+  align-items: center;
+  margin: 0;
+}
+
+.work-text, .work-text_2 {
+  margin-top: -35px;
+  text-align: center;
+}
+
+.work-text h2, .work-text_2 h2 {
+  font-size: 27px;
+  margin-top: 10px;
+}
+
+.work-text p, .work-text_2 p {
+font-size: 17px;
+width: 100%;
+margin-top: 20px;
+}
+/* fim Nosso trabalho. */
+
+/* Objetivos. */
+.objectives-session {
+  display: block;
+  margin: 0;
+}
+
+.objectives-photo {
+  width: 86vw;
+}
+
+.objectives-photo img {
+  max-width: 110%;
+}
+
+.objectives-text {
+  text-align: left;
+}
+
+.objectives-text h3 {
+  font-size: 29px;
+}
+
+.objectives-details h4 {
+  margin-top: 1.6rem;
+}
+
+.p_2 {
+  font-size: 16px;
+}
+
+.objectives-details p {
+  margin-top: 10px;
+}
+/* fim objetivos. */
+
+/*  estatiticas */
+.statistics-session {
+  padding: 1rem;
+  margin: 0;
+}
+
+.statistics-text h1 {
+  font-size: 29px;
+}
+
+.statistics-text p {
+  font-size: 18px;
+}
+
+.statistics-grid {
+  display: block;
+}
+
+.stat-item p {
+ margin-bottom: 13px;
+}
+/* Fim estatiticas */
+
+/* beneficios */
+.benefits-session {
+  display: block; 
+  margin: 0;
+}
+
+.benefits-photo img {
+  max-width: 100%;
+}
+
+.benefits-text h4 {
+  margin-top: 10px;
+
+}
+/* Fim beneficios */
+
+/* dIA A DIA */
+.daily-session {
+  display: block;
+  padding: 3rem;
+  margin: 0;
+}
+
+.daily-photo img {
+  max-width: 90%;
+  margin-top: 10px;
+}
+
+.daily-text {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.daily-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.daily-text img {
+  width: 90px;
+}
+/* fim no dia a dia */
+
+/* FOOTER */
+.footer-content {
+  display: block;
+  margin: 0;
+  text-align: center;
+
+  img {
+    top: 17px; 
+    left: 0.1px;
+    margin-top: 10px;
+  }
+}
+
+footer a {
+  margin-top: 05px;
+}
+
+footer h2 {
+  margin-top: 10px;
+  }
+}
+
+
+
