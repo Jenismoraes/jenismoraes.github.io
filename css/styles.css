@@ -248,8 +248,8 @@ footer {
 
   .mobile-menu {
     top: 60px;
-    left: 0;
-    width: 50%;
+    padding-left: 1rem;
+    width: 100%;
     background-color: var(--footer-bg);
   }
 
