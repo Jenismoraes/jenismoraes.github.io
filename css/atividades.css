@@ -1,0 +1,180 @@
+.root-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  padding: 1rem;
+  width: 100%;
+}
+
+.content-header {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  width: 400px;
+  input {
+    width: 100%;
+  }
+}
+
+.btn-light {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  color: var(--font-secondary-color);
+  border-color: var(--border-color);
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: groove;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: var(--color-secondary);
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--font-primary-color);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: var(--title-color);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Fim Sidebar */
+
+/* Tabela */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+tr:nth-of-type(odd) {
+  background: #eeeeee45;
+}
+
+th {
+  background: white;
+  color: var(--font-secondary-color);
+  font-weight: 600;
+}
+
+td,
+th {
+  padding: 1rem;
+  border-left: none;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  font-size: 18px;
+}
+
+.completed-row {
+  text-decoration: line-through;
+  color: var(--font-secondary-color);
+}
+
+.missao:hover {
+  cursor: pointer;
+}
+
+/* Fim Tabela */
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+
+  /* Codigo para deixar a tabela responsiva */
+  table {
+    width: 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid var(--border-color);;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid var(--border-color);;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: var(--font-primary-color);
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Fim sidebar */

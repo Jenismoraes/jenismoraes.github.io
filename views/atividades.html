@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanos Limpos - Atividades</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/atividades.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="root-container">
+      <div class="container">
+        <div class="sidebar">
+          <a href="./home.html">Home</a>
+          <a class="active" href="./atividades.html">Suas atividades</a>
+          <a href="/views/login.html">Logout</a>
+        </div>
+        <div class="content">
+          <div class="content-header">
+            <h1 class="mb-1">Atividades</h1>
+            <div class="form-content">
+              <form action="" id="search-form" class="search-form mb-1">
+                <div class="custom-input mr-1">
+                  <input
+                    id="pesquisar"
+                    type="text"
+                    placeholder="Pesquisar atividades"
+                  />
+                  <label for="pesquisar">Pesquisar atividades</label>
+                </div>
+                <button type="submit" class="btn-light">Pesquisar</button>
+              </form>
+              <div class="badge-light">
+                <p>Pontos: <b id="pontos-contador">9999</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="activities-table-container">
+            <table id="tabela-atividades">
+              <thead>
+                <tr>
+                  <th>Missão</th>
+                  <th>Prazo</th>
+                  <th>Pontos</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="completed-row">
+                  <td data-column="Missão">
+                    Reforçar a fiscalização de despejo ilegal de residuos no mar
+                  </td>
+                  <td data-column="Prazo" class="text-secondary">30/10/2024</td>
+                  <td data-column="Pontos" class="text-primary">
+                    <div class="badge-light">
+                      <p>999</p>
+                    </div>
+                  </td>
+                  <td data-column="">
+                    <div class="actions">
+                      <button class="btn-light">Completar</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-column="Missão">
+                    Faça Parte de uma organização de limpeza costeira
+                  </td>
+                  <td data-column="Prazo">30/10/2024</td>
+                  <td data-column="Pontos">50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="menu">
+              <div class="logo-footer">
+                <img src="../img/logo.png" alt="Logo" />
+              </div>
+              <p>
+                Junte-se a nós na missão de preservar os oceanos e promover a
+                sustentabilidade
+              </p>
+            </div>
+            <ul class="no-decoration-list">
+              <li><h2>Páginas</h2></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#problem">Proteja os oceanos</a></li>
+              <li><a href="#work">Nosso Trabalho</a></li>
+              <li><a href="#objectives">Objetivos</a></li>
+              <li><a href="#benefits">Beneficios</a></li>
+              <li><a href="#daily">Como ajuda a comunidade</a></li>
+            </ul>
+          </div>
+          <div class="copyright-container">
+            <div class="divider"></div>
+            <div class="footer-bottom">
+              <span>Oceano Limpo © 2024</span>
+              <a
+                href="https://github.com/Jenismoraes/gs-web.git"
+                target="_blank"
+                >Código Fonte</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/atividades.js"></script>
+  </body>
+</html>
