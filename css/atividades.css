@@ -168,12 +168,14 @@ th {
     color: var(--font-primary-color);
     font-weight: bold;
   }
-}
 
-@media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  .search-form {
+    width: 100%;
   }
 }
 
