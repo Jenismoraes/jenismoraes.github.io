@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/home.js"></script>
   </head>
   <body>
     <div class="container" id="home">
@@ -78,12 +77,34 @@
 
         <p class="section-footer">Juntos podemos fazer a diferença</p>
       </div>
-      <div class="problem-photo">
-        <img
-          class="section-photo"
-          src="../img/serviços_comu/ação_comu.jpg"
-          alt="Pessoas limpando a praia"
-        />
+      <div class="problem-photo carousel-container">      -->
+        <div class="slideshow-container">
+          <div class="slideItem fade">
+            <img src="../img/carrossel/carrossel_1.jpg" alt="Slider 1 - Ação Social" style="width:100%">
+            <div class="text">Ajudando as tartarugas</div>
+          </div>
+        
+          <div class="slideItem fade">
+            <img src="../img/carrossel/carrossel_2.jpg" alt="Slider 2 - Limpando as praias" style="width:100%">
+            <div class="text">Cada garrafa conta!</div>
+          </div>
+        
+          <div class="slideItem fade">
+            <img src="../img/serviços_comu/ação_comu.jpg" alt="Slider 3 - Limpando Praia" style="width:100%">
+            <div class="text">Ação de limpeza em balneario camburiu</div>
+          </div>
+        
+          <!-- Botao de proximo/anterior -->
+          <a class="prev" onclick="avancarSlide(-1)">&#10094;</a>
+          <a class="next" onclick="avancarSlide(1)">&#10095;</a>
+        </div>
+        
+        <!-- Indicadores -->
+        <div style="text-align:center">
+          <span class="dot" onclick="irParaSlider(1)"></span>
+          <span class="dot" onclick="irParaSlider(2)"></span>
+          <span class="dot" onclick="irParaSlider(3)"></span>
+        </div>
       </div>
     </section>
 
@@ -291,5 +312,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/home.js"></script>
   </body>
 </html>
